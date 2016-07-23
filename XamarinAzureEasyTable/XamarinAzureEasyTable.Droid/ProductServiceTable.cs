@@ -7,13 +7,13 @@ namespace XamarinAzureEasyTable.Droid
 {
     class ProductServiceTable
     {
-        private MobileServiceClient client;// = new MobileServiceClient("http://backendxamarincontest.azurewebsites.net/");
+        private MobileServiceClient client;
         private IMobileServiceTable<Product> productTable;
 
 
         public ProductServiceTable()
         {
-            client = new MobileServiceClient("http://backendxamarincontest.azurewebsites.net/");
+            client = new MobileServiceClient("YOUR_APP_URL");
             productTable = client.GetTable<Product>();
         }
 
